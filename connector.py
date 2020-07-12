@@ -4,14 +4,14 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy.orm import sessionmaker
 
-
+#conexion bd 
 engine = create_engine( 'mysql+pymysql://root:Admin1234@localhost/taller1' )
 Base = declarative_base()
 Session = sessionmaker(bind=engine)
 session = Session()
 
 
-
+#creando tablas
 class Alumno(Base):
     __tablename__ = 'alumnos'
     id = Column(Integer, primary_key=True)

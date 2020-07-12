@@ -1,13 +1,10 @@
 
 from sqlalchemy import create_engine
 from connector import *
-# conexion
-#engine = create_engine('sqlite:///libros.db', echo=True)
-#engine = create_engine( 'mysql+pymysql://root:Admin1234@localhost/taller1' )
-# sesion
 
 
-# insertamos autores
+
+# insertamos datos
 autor_1 = Asistencia('lola garcia','jose garcia','programacion')
 autor_2 = Asistencia('pedro zuares','jose garcia','etica')
 autor_3 = Asistencia('pedro zuares','jose garcia','calculo')
